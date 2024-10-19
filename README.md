@@ -1,7 +1,7 @@
 # Salt hash join technique with Apache Spark
 
-A common problem when working with distributed processing is data skew, a situation where, in the context of Spark, the data is poorly distributed among the DataFrame partitions and consequently among the cluster's workers.
+A common challenge in distributed processing is data skew, which occurs in Spark when data is unevenly distributed across the partitions of a DataFrame and, consequently, among the cluster's workers.
 
-The main consequences of data skew are low performance or memory spills, and this project presents an example of how to mitigate this problem in Join operations.
+Unbalanced partitions usually lead to performance degradation and memory leaks, potentially making it impossible to execute a simple but poorly optimized job.
 
-Check out [salt_hash_join.ipynb](./salt_hash_join.ipynb) for a step-by-step explanation of the implementation, comparisons and demonstrations of results.
+In this project, I demonstrate how to mitigate this issue in join operations. Access the [salt_hash_join.ipynb](./salt_hash_join.ipynb) file to check the step-by-step explanation of the implementation and demonstration of results.
